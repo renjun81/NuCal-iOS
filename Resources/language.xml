@@ -1,0 +1,1045 @@
+<language>
+	<zh>
+        <delete><![CDATA[刪除]]></delete>
+	</zh>
+	<sc>
+        <delete><![CDATA[删除]]></delete>
+	</sc>
+	<en>
+        <delete><![CDATA[Delete]]></delete>
+	</en>
+    
+    <zh>
+        <yes><![CDATA[是]]></yes>
+	</zh>
+	<sc>
+        <yes><![CDATA[是]]></yes>
+	</sc>
+	<en>
+        <yes><![CDATA[YES]]></yes>
+	</en>
+    
+    <zh>
+        <no><![CDATA[否]]></no>
+	</zh>
+	<sc>
+        <no><![CDATA[否]]></no>
+	</sc>
+	<en>
+        <no><![CDATA[NO]]></no>
+	</en>
+    
+    <zh>
+        <ok><![CDATA[確定]]></ok>
+	</zh>
+	<sc>
+        <ok><![CDATA[确定]]></ok>
+	</sc>
+	<en>
+        <ok><![CDATA[OK]]></ok>
+	</en>
+    
+    <zh>
+        <confirm><![CDATA[確定]]></confirm>
+	</zh>
+	<sc>
+        <confirm><![CDATA[确定]]></confirm>
+	</sc>
+	<en>
+        <confirm><![CDATA[Confirm]]></confirm>
+	</en>
+    
+    <zh>
+        <cancel><![CDATA[取消]]></cancel>
+	</zh>
+	<sc>
+        <cancel><![CDATA[取消]]></cancel>
+	</sc>
+	<en>
+        <cancel><![CDATA[Cancel]]></cancel>
+	</en>
+    
+    <zh>
+        <g><![CDATA[克]]></g>
+	</zh>
+	<sc>
+        <g><![CDATA[克]]></g>
+	</sc>
+	<en>
+        <g><![CDATA[g]]></g>
+	</en>
+    
+    <zh>
+        <ml><![CDATA[毫升]]></ml>
+	</zh>
+	<sc>
+        <ml><![CDATA[毫升]]></ml>
+	</sc>
+	<en>
+        <ml><![CDATA[ml]]></ml>
+	</en>
+    
+    <zh>
+        <mg><![CDATA[毫克]]></mg>
+	</zh>
+	<sc>
+        <mg><![CDATA[毫克]]></mg>
+	</sc>
+	<en>
+        <mg><![CDATA[mg]]></mg>
+	</en>
+    
+    <zh>
+        <kcal><![CDATA[千卡]]></kcal>
+	</zh>
+	<sc>
+        <kcal><![CDATA[千卡]]></kcal>
+	</sc>
+	<en>
+        <kcal><![CDATA[kcal]]></kcal>
+	</en>
+    
+    <zh>
+        <kj><![CDATA[千焦]]></kj>
+	</zh>
+	<sc>
+        <kj><![CDATA[千焦]]></kj>
+	</sc>
+	<en>
+        <kj><![CDATA[kJ]]></kj>
+	</en>
+    
+	<zh>
+        <help><![CDATA[說明]]></help>
+	</zh>
+	<sc>
+        <help><![CDATA[说明]]></help>
+	</sc>
+	<en>
+        <help><![CDATA[Help]]></help>
+	</en>
+    
+    <zh>
+        <about_nucal><![CDATA[關於營計寶]]></about_nucal>
+	</zh>
+	<sc>
+        <about_nucal><![CDATA[关于营计宝]]></about_nucal>
+	</sc>
+	<en>
+        <about_nucal><![CDATA[About NuCal]]></about_nucal>
+	</en>
+    
+    <zh>
+        <nutrition_calculator><![CDATA[營計寶]]></nutrition_calculator>
+	</zh>
+	<sc>
+        <nutrition_calculator><![CDATA[营计宝]]></nutrition_calculator>
+	</sc>
+	<en>
+        <nutrition_calculator><![CDATA[Nutrition Calculator]]></nutrition_calculator>
+	</en>
+    
+    <zh>
+        <user_profile><![CDATA[個人檔案]]></user_profile>
+	</zh>
+	<sc>
+        <user_profile><![CDATA[个人档案]]></user_profile>
+	</sc>
+	<en>
+        <user_profile><![CDATA[User Profile]]></user_profile>
+	</en>    
+    
+    <zh>
+        <my_foodlist><![CDATA[我的食物清單]]></my_foodlist>
+	</zh>
+	<sc>
+        <my_foodlist><![CDATA[我的食物清单]]></my_foodlist>
+	</sc>
+	<en>
+        <my_foodlist><![CDATA[My Food List]]></my_foodlist>
+	</en>
+    
+    <zh>
+        <add_food><![CDATA[加入食物]]></add_food>
+	</zh>
+	<sc>
+        <add_food><![CDATA[加入食物]]></add_food>
+	</sc>
+	<en>
+        <add_food><![CDATA[Add Food]]></add_food>
+	</en>x
+    
+    <zh>
+        <edit_food><![CDATA[編輯食物]]></edit_food>
+	</zh>
+	<sc>
+        <edit_food><![CDATA[编辑食物]]></edit_food>
+	</sc>
+	<en>
+        <edit_food><![CDATA[Edit Food]]></edit_food>
+	</en>
+    
+    <zh>
+        <my_intake><![CDATA[我的攝取量]]></my_intake>
+	</zh>
+	<sc>
+        <my_intake><![CDATA[我的摄取量]]></my_intake>
+	</sc>
+	<en>
+        <my_intake><![CDATA[My Intake]]></my_intake>
+	</en>
+    
+    <zh>
+        <my_intake_history><![CDATA[我的攝取量記錄]]></my_intake_history>
+	</zh>
+	<sc>
+        <my_intake_history><![CDATA[我的摄取量记录]]></my_intake_history>
+	</sc>
+	<en>
+        <my_intake_history><![CDATA[My Intake History]]></my_intake_history>
+	</en>
+    
+    <zh>
+        <name><![CDATA[姓名]]></name>
+	</zh>
+	<sc>
+        <name><![CDATA[姓名]]></name>
+	</sc>
+	<en>
+        <name><![CDATA[Name]]></name>
+	</en>
+    
+    <zh>
+        <alert_name_exist><![CDATA[資料庫中己存在同樣的個人檔案姓名。]]></alert_name_exist>
+	</zh>
+	<sc>
+        <alert_name_exist><![CDATA[资料库中己存在同样的个人档案姓名。]]></alert_name_exist>
+	</sc>
+	<en>
+        <alert_name_exist><![CDATA[User Profile Name has already existed in the database.]]></alert_name_exist>
+	</en>
+    
+    <zh>
+        <gender><![CDATA[性別]]></gender>
+	</zh>
+	<sc>
+        <gender><![CDATA[性别]]></gender>
+	</sc>
+	<en>
+        <gender><![CDATA[Gender]]></gender>
+	</en>
+    
+    <zh>
+        <male><![CDATA[男性]]></male>
+	</zh>
+	<sc>
+        <male><![CDATA[男性]]></male>
+	</sc>
+	<en>
+        <male><![CDATA[Male]]></male>
+	</en>
+    
+    <zh>
+        <female><![CDATA[女性]]></female>
+	</zh>
+	<sc>
+        <female><![CDATA[女性]]></female>
+	</sc>
+	<en>
+        <female><![CDATA[Female]]></female>
+	</en>
+    
+    <zh>
+        <weight><![CDATA[體重]]></weight>
+	</zh>
+	<sc>
+        <weight><![CDATA[体重]]></weight>
+	</sc>
+	<en>
+        <weight><![CDATA[Weight]]></weight>
+	</en>
+    
+    <zh>
+        <lbs><![CDATA[磅]]></lbs>
+	</zh>
+	<sc>
+        <lbs><![CDATA[磅]]></lbs>
+	</sc>
+	<en>
+        <lbs><![CDATA[lbs]]></lbs>
+	</en>
+    
+    <zh>
+        <kg><![CDATA[千克]]></kg>
+	</zh>
+	<sc>
+        <kg><![CDATA[千克]]></kg>
+	</sc>
+	<en>
+        <kg><![CDATA[kg]]></kg>
+	</en>
+    
+    <zh>
+        <height><![CDATA[身高]]></height>
+	</zh>
+	<sc>
+        <height><![CDATA[身高]]></height>
+	</sc>
+	<en>
+        <height><![CDATA[Height]]></height>
+	</en>
+    
+    <zh>
+        <ft><![CDATA[英尺]]></ft>
+	</zh>
+	<sc>
+        <ft><![CDATA[英尺]]></ft>
+	</sc>
+	<en>
+        <ft><![CDATA[ft]]></ft>
+	</en>
+    
+    <zh>
+        <inch><![CDATA[英吋]]></inch>
+	</zh>
+	<sc>
+        <inch><![CDATA[英寸]]></inch>
+	</sc>
+	<en>
+        <inch><![CDATA[inch]]></inch>
+	</en>
+    
+    <zh>
+        <m><![CDATA[米]]></m>
+	</zh>
+	<sc>
+        <m><![CDATA[米]]></m>
+	</sc>
+	<en>
+        <m><![CDATA[m]]></m>
+	</en>
+    
+    <zh>
+        <age><![CDATA[年齡]]></age>
+	</zh>
+	<sc>
+        <age><![CDATA[年龄]]></age>
+	</sc>
+	<en>
+        <age><![CDATA[Age]]></age>
+	</en>
+    
+    <zh>
+        <years><![CDATA[歲]]></years>
+	</zh>
+	<sc>
+        <years><![CDATA[岁]]></years>
+	</sc>
+	<en>
+        <years><![CDATA[Years]]></years>
+	</en>
+    
+    <zh>
+        <al><![CDATA[體力活動量]]></al>
+	</zh>
+	<sc>
+        <al><![CDATA[体力活动量]]></al>
+	</sc>
+	<en>
+        <al><![CDATA[Activity Level]]></al>
+	</en>
+    
+    <zh>
+        <food><![CDATA[食物]]></food>
+	</zh>
+	<sc>
+        <food><![CDATA[食物]]></food>
+	</sc>
+	<en>
+        <food><![CDATA[Food]]></food>
+	</en>
+    
+    <zh>
+        <nutrient><![CDATA[營養素]]></nutrient>
+	</zh>
+	<sc>
+        <nutrient><![CDATA[营养素]]></nutrient>
+	</sc>
+	<en>
+        <nutrient><![CDATA[Nutrient]]></nutrient>
+	</en>
+    
+    <zh>
+        <nu_info><![CDATA[營養資料]]></nu_info>
+	</zh>
+	<sc>
+        <nu_info><![CDATA[营养资料]]></nu_info>
+	</sc>
+	<en>
+        <nu_info><![CDATA[Nutrition Facts / Information]]></nu_info>
+	</en>
+    
+    <zh>
+        <per100><![CDATA[每100克]]></per100>
+	</zh>
+	<sc>
+        <per100><![CDATA[每100克]]></per100>
+	</sc>
+	<en>
+        <per100><![CDATA[per 100g]]></per100>
+	</en>
+    
+    <zh>
+        <per_pack><![CDATA[每包裝/每食用份量]]></per_pack>
+	</zh>
+	<sc>
+        <per_pack><![CDATA[每包装/每食用份量]]></per_pack>
+	</sc>
+	<en>
+        <per_pack><![CDATA[per serving/package]]></per_pack>
+	</en>
+    
+    <zh>
+        <energy><![CDATA[能量]]></energy>
+	</zh>
+	<sc>
+        <energy><![CDATA[能量]]></energy>
+	</sc>
+	<en>
+        <energy><![CDATA[Energy]]></energy>
+	</en>
+    
+    <zh>
+        <protein><![CDATA[蛋白質]]></protein>
+	</zh>
+	<sc>
+        <protein><![CDATA[蛋白质]]></protein>
+	</sc>
+	<en>
+        <protein><![CDATA[Protein]]></protein>
+	</en>
+
+    <zh>
+        <totalfat><![CDATA[總脂肪]]></totalfat>
+	</zh>
+	<sc>
+        <totalfat><![CDATA[总脂肪]]></totalfat>
+	</sc>
+	<en>
+        <totalfat><![CDATA[Total Fat]]></totalfat>
+	</en>
+
+    <zh>
+        <satfat><![CDATA[飽和脂肪]]></satfat>
+	</zh>
+	<sc>
+        <satfat><![CDATA[饱和脂肪]]></satfat>
+	</sc>
+	<en>
+        <satfat><![CDATA[Saturated Fat]]></satfat>
+	</en>
+    
+    <zh>
+        <transfat><![CDATA[反式脂肪]]></transfat>
+	</zh>
+	<sc>
+        <transfat><![CDATA[反式脂肪]]></transfat>
+	</sc>
+	<en>
+        <transfat><![CDATA[Trans Fat]]></transfat>
+	</en>
+    
+    <zh>
+        <carbo><![CDATA[碳水化合物]]></carbo>
+	</zh>
+	<sc>
+        <carbo><![CDATA[碳水化合物]]></carbo>
+	</sc>
+	<en>
+        <carbo><![CDATA[Carbohydrates]]></carbo>
+	</en>
+    
+    <zh>
+        <ava_carbo><![CDATA[可獲得的碳水化合物]]></ava_carbo>
+	</zh>
+	<sc>
+        <ava_carbo><![CDATA[可获得的碳水化合物]]></ava_carbo>
+	</sc>
+	<en>
+        <ava_carbo><![CDATA[Available Carbohydrates]]></ava_carbo>
+	</en>
+    
+    <zh>
+        <total_carbo><![CDATA[總碳水化合物]]></total_carbo>
+	</zh>
+	<sc>
+        <total_carbo><![CDATA[总碳水化合物]]></total_carbo>
+	</sc>
+	<en>
+        <total_carbo><![CDATA[Total Carbohydrates]]></total_carbo>
+	</en>
+    
+    <zh>
+        <fibre><![CDATA[膳食纖維]]></fibre>
+	</zh>
+	<sc>
+        <fibre><![CDATA[膳食纤维]]></fibre>
+	</sc>
+	<en>
+        <fibre><![CDATA[Dietary Fibre]]></fibre>
+	</en>
+
+    <zh>
+        <sugar><![CDATA[糖]]></sugar>
+	</zh>
+	<sc>
+        <sugar><![CDATA[糖]]></sugar>
+	</sc>
+	<en>
+        <sugar><![CDATA[Sugars]]></sugar>
+	</en>
+
+    <zh>
+        <sodium><![CDATA[鈉]]></sodium>
+	</zh>
+	<sc>
+        <sodium><![CDATA[钠]]></sodium>
+	</sc>
+	<en>
+        <sodium><![CDATA[Sodium]]></sodium>
+	</en>
+    
+    <zh>
+        <unit_mg><![CDATA[毫克]]></unit_mg>
+	</zh>
+	<sc>
+        <unit_mg><![CDATA[毫克]]></unit_mg>
+	</sc>
+	<en>
+        <unit_mg><![CDATA[mg]]></unit_mg>
+	</en>
+    
+    <zh>
+        <select_food><![CDATA[選擇食物]]></select_food>
+	</zh>
+	<sc>
+        <select_food><![CDATA[选择食物]]></select_food>
+	</sc>
+	<en>
+        <select_food><![CDATA[Select Food]]></select_food>
+	</en>
+    
+    <zh>
+        <detail><![CDATA[詳細資料]]></detail>
+	</zh>
+	<sc>
+        <detail><![CDATA[详细资料]]></detail>
+	</sc>
+	<en>
+        <detail><![CDATA[Details]]></detail>
+	</en>
+    
+    <zh>
+        <search><![CDATA[搜尋]]></search>
+	</zh>
+	<sc>
+        <search><![CDATA[搜寻]]></search>
+	</sc>
+	<en>
+        <search><![CDATA[Search]]></search>
+	</en>
+    
+    <zh>
+        <daily_energy><![CDATA[每日能量需要]]></daily_energy>
+	</zh>
+	<sc>
+        <daily_energy><![CDATA[每日能量需要]]></daily_energy>
+	</sc>
+	<en>
+        <daily_energy><![CDATA[Daily Energy Requirement]]></daily_energy>
+	</en>
+    
+    <zh>
+        <kcal><![CDATA[卡路里]]></kcal>
+	</zh>
+	<sc>
+        <kcal><![CDATA[卡路里]]></kcal>
+	</sc>
+	<en>
+        <kcal><![CDATA[Kcal]]></kcal>
+	</en>
+    
+    <zh>
+        <consumed><![CDATA[進食量]]></consumed>
+	</zh>
+	<sc>
+        <consumed><![CDATA[进食量]]></consumed>
+	</sc>
+	<en>
+        <consumed><![CDATA[Consumed]]></consumed>
+	</en>
+    
+    <zh>
+        <nu_fact_info><![CDATA[營養資料]]></nu_fact_info>
+	</zh>
+	<sc>
+        <nu_fact_info><![CDATA[营养资料]]></nu_fact_info>
+	</sc>
+	<en>
+        <nu_fact_info><![CDATA[Nutrition Facts / Info.]]></nu_fact_info>
+	</en>
+    
+    <zh>
+        <total_en_over_intake><![CDATA[總能量/營養素攝取]]></total_en_over_intake>
+	</zh>
+	<sc>
+        <total_en_over_intake><![CDATA[总能量/营养素摄取]]></total_en_over_intake>
+	</sc>
+	<en>
+        <total_en_over_intake><![CDATA[Total Energy/ Nutrient Intake]]></total_en_over_intake>
+	</en>
+    
+    <zh>
+        <daily_limit><![CDATA[每日攝取上限%]]></daily_limit>
+	</zh>
+	<sc>
+        <daily_limit><![CDATA[每日摄取上限%]]></daily_limit>
+	</sc>
+	<en>
+        <daily_limit><![CDATA[% Daily Intake Upper Limit]]></daily_limit>
+	</en>
+    
+    <zh>
+        <my_intake_history_lbl><![CDATA[我的攝取量記錄於]]></my_intake_history_lbl>
+	</zh>
+	<sc>
+        <my_intake_history_lbl><![CDATA[我的摄取量记录於]]></my_intake_history_lbl>
+	</sc>
+	<en>
+        <my_intake_history_lbl><![CDATA[My Intake on]]></my_intake_history_lbl>
+	</en>
+    
+    <zh>
+        <alert_car01><![CDATA[請輸入 -「膳食纖維」含量]]></alert_car01>
+	</zh>
+	<sc>
+        <alert_car01><![CDATA[请输入 -「膳食纤维」含量]]></alert_car01>
+	</sc>
+	<en>
+        <alert_car01><![CDATA[Please enter - The amount of dietary fibre]]></alert_car01>
+	</en>
+    
+    <zh>
+        <alert_car02><![CDATA[選擇「總碳水化合物」必須同時輸入「膳食纖維」含量。]]></alert_car02>
+	</zh>
+	<sc>
+        <alert_car02><![CDATA[选择「总碳水化合物」必须同时输入「膳食纤维」含量。]]></alert_car02>
+	</sc>
+	<en>
+        <alert_car02><![CDATA[The amount of dietary fibre must be entered if total carbohydrates is selected.]]></alert_car02>
+	</en>
+    
+    <zh>
+        <alert_car03><![CDATA[請查看「總碳水化合物」、「膳食纖維」及「糖」的數值是否正確。]]></alert_car03>
+	</zh>
+	<sc>
+        <alert_car03><![CDATA[请查看「总碳水化合物」、「膳食纤维」及「糖」的数值是否正确。]]></alert_car03>
+	</sc>
+	<en>
+        <alert_car03><![CDATA[Please double check the values of "Total carbohydrates", "Dietary fibre" and "Sugar".]]></alert_car03>
+	</en>
+    
+    <zh>
+        <alert_car04><![CDATA[請查看「總碳水化合物」及「膳食纖維」的數值是否正確。]]></alert_car04>
+	</zh>
+	<sc>
+        <alert_car04><![CDATA[请查看「总碳水化合物」及「膳食纤维」的数值是否正确。]]></alert_car04>
+	</sc>
+	<en>
+        <alert_car04><![CDATA[Please double check the values of "Total carbohydrates" and "Dietary fibre" .]]></alert_car04>
+	</en>
+
+    <zh>
+        <alert_car05><![CDATA[請查看「碳水化合物」及「糖」的數值是否正確。]]></alert_car05>
+	</zh>
+	<sc>
+        <alert_car05><![CDATA[请查看「碳水化合物」及「糖」的数值是否正确。]]></alert_car05>
+	</sc>
+	<en>
+        <alert_car05><![CDATA[Please double check the values of "Carbohydrates" and "Sugar" .]]></alert_car05>
+	</en>
+    
+    <zh>
+        <alert_fat01><![CDATA[請查看「總脂肪」、「飽和脂肪」及「反式脂肪」的數值是否正確。]]></alert_fat01>
+	</zh>
+	<sc>
+        <alert_fat01><![CDATA[请查看「总脂肪」、「饱和脂肪」及「反式脂肪」的数值是否正确。]]></alert_fat01>
+	</sc>
+	<en>
+        <alert_fat01><![CDATA[Please double check the values of "Total fat", "Saturated fat" and "Trans fat"]]></alert_fat01>
+	</en>
+    
+    <zh>
+        <alert_fat02><![CDATA[請查看「總脂肪」及「飽和脂肪」的數值是否正確。]]></alert_fat02>
+	</zh>
+	<sc>
+        <alert_fat02><![CDATA[请查看「总脂肪」及「饱和脂肪」的数值是否正确。]]></alert_fat02>
+	</sc>
+	<en>
+        <alert_fat02><![CDATA[Please double check the values of "Total fat" and "Saturated fat"]]></alert_fat02>
+	</en>
+    
+    <zh>
+        <alert_fat03><![CDATA[請查看「總脂肪」及「反式脂肪」的數值是否正確。]]></alert_fat03>
+	</zh>
+	<sc>
+        <alert_fat03><![CDATA[请查看「总脂肪」及「反式脂肪」的数值是否正确。]]></alert_fat03>
+	</sc>
+	<en>
+        <alert_fat03><![CDATA[Please double check the values of "Total fat" and "Trans fat"]]></alert_fat03>
+	</en>
+    
+    <zh>
+        <alert_foodname><![CDATA[請輸入 - 食物名稱。]]></alert_foodname>
+	</zh>
+	<sc>
+        <alert_foodname><![CDATA[请输入 - 食物名称。]]></alert_foodname>
+	</sc>
+	<en>
+        <alert_foodname><![CDATA[Please enter - The name of the food.]]></alert_foodname>
+	</en>
+    
+    <zh>
+        <alert_foodname_exist><![CDATA[資料庫中己存在同樣的食物名稱。]]></alert_foodname_exist>
+	</zh>
+	<sc>
+        <alert_foodname_exist><![CDATA[资料库中己存在同样的食物名称。]]></alert_foodname_exist>
+	</sc>
+	<en>
+        <alert_foodname_exist><![CDATA[Food has already existed in the database.]]></alert_foodname_exist>
+	</en>
+    
+    <zh>
+        <alert_amount><![CDATA[請選擇 - 食物參考量。]]></alert_amount>
+	</zh>
+	<sc>
+        <alert_amount><![CDATA[请选择 - 食物参考量。]]></alert_amount>
+	</sc>
+	<en>
+        <alert_amount><![CDATA[Please enter - The food reference amount.]]></alert_amount>
+	</en>
+    
+    <zh>
+        <alert_amount_atleast><![CDATA[請輸入 - 能量值或最少一項營養素含量。]]></alert_amount_atleast>
+	</zh>
+	<sc>
+        <alert_amount_atleast><![CDATA[请输入 - 能量值或最少一项营养素含量。]]></alert_amount_atleast>
+	</sc>
+	<en>
+        <alert_amount_atleast><![CDATA[Please enter - The energy value or at least one nutrient value.]]></alert_amount_atleast>
+	</en>
+    
+    <zh>
+        <alert_amount_large><![CDATA[營養素含量不能超過食物参考量。]]></alert_amount_large>
+	</zh>
+	<sc>
+        <alert_amount_large><![CDATA[营养素含量不能超过食物参考量。]]></alert_amount_large>
+	</sc>
+	<en>
+        <alert_amount_large><![CDATA[Total nutrients should not larger than food reference amount.]]></alert_amount_large>
+	</en>
+    
+    <zh>
+        <alert_energy01><![CDATA[請查看「能量」、「蛋白質」、「總脂肪」及「碳水化合物」的數值是否正確。]]></alert_energy01>
+	</zh>
+	<sc>
+        <alert_energy01><![CDATA[请查看「能量」、「蛋白质」、「总脂肪」及「碳水化合物」的数值是否正确。]]></alert_energy01>
+	</sc>
+	<en>
+        <alert_energy01><![CDATA[Please double check the values of "Energy", "Protein", "Total Fat" and "Carbohydrates".]]></alert_energy01>
+	</en>
+    
+    <zh>
+        <alert_exit_notsave><![CDATA[是否不需要儲存便離開？]]></alert_exit_notsave>
+	</zh>
+	<sc>
+        <alert_exit_notsave><![CDATA[是否不需要储存便离开？]]></alert_exit_notsave>
+	</sc>
+	<en>
+        <alert_exit_notsave><![CDATA[Exit without saving?]]></alert_exit_notsave>
+	</en>
+    
+    <zh>
+        <alert_addother><![CDATA[加入其他食物？]]></alert_addother>
+	</zh>
+	<sc>
+        <alert_addother><![CDATA[加入其他食物？]]></alert_addother>
+	</sc>
+	<en>
+        <alert_addother><![CDATA[Add another food?]]></alert_addother>
+	</en>
+    
+    <zh>
+        <alert_select_language><![CDATA[請選擇語言]]></alert_select_language>
+	</zh>
+	<sc>
+        <alert_select_language><![CDATA[请选择语言]]></alert_select_language>
+	</sc>
+	<en>
+        <alert_select_language><![CDATA[Please select language]]></alert_select_language>
+	</en>
+    
+    <zh>
+        <alert_nofood_select><![CDATA[沒有選擇食物，請先加入食物或前往我的食物清單選擇食物。]]></alert_nofood_select>
+	</zh>
+	<sc>
+        <alert_nofood_select><![CDATA[没有选择食物，请先加入食物或前往我的食物清单选择食物。]]></alert_nofood_select>
+	</sc>
+	<en>
+        <alert_nofood_select><![CDATA[No food is selected. Please add Food or go to My Food List to select food.]]></alert_nofood_select>
+	</en>
+    
+    <zh>
+        <alert_profile1><![CDATA[體重不應超過440磅。]]></alert_profile1>
+	</zh>
+	<sc>
+        <alert_profile1><![CDATA[体重不应超过440磅。]]></alert_profile1>
+	</sc>
+	<en>
+        <alert_profile1><![CDATA[The weight should not exceed 440lbs.]]></alert_profile1>
+	</en>
+    
+    <zh>
+        <alert_profile2><![CDATA[體重不應超過200千克。]]></alert_profile2>
+	</zh>
+	<sc>
+        <alert_profile2><![CDATA[体重不应超过200千克。]]></alert_profile2>
+	</sc>
+	<en>
+        <alert_profile2><![CDATA[The weight should not exceed 200kg.]]></alert_profile2>
+	</en>
+    
+    <zh>
+        <alert_profile3><![CDATA[身高不應超過10英尺。]]></alert_profile3>
+	</zh>
+	<sc>
+        <alert_profile3><![CDATA[身高不应超过10英尺。]]></alert_profile3>
+	</sc>
+	<en>
+        <alert_profile3><![CDATA[The height should not exceed 10ft.]]></alert_profile3>
+	</en>
+    
+    <zh>
+        <alert_profile4><![CDATA[身高不應超過3米。]]></alert_profile4>
+	</zh>
+	<sc>
+        <alert_profile4><![CDATA[身高不应超过3米。]]></alert_profile4>
+	</sc>
+	<en>
+        <alert_profile4><![CDATA[The height should not exceed 3m.]]></alert_profile4>
+	</en>
+    
+    <zh>
+        <alert_profile5><![CDATA[請輸入姓名。]]></alert_profile5>
+	</zh>
+	<sc>
+        <alert_profile5><![CDATA[请输入姓名。]]></alert_profile5>
+	</sc>
+	<en>
+        <alert_profile5><![CDATA[Please enter the name.]]></alert_profile5>
+	</en>
+    
+    <zh>
+        <alert_profile6><![CDATA[請輸入體重。]]></alert_profile6>
+	</zh>
+	<sc>
+        <alert_profile6><![CDATA[请输入体重。]]></alert_profile6>
+	</sc>
+	<en>
+        <alert_profile6><![CDATA[Please enter the weight.]]></alert_profile6>
+	</en>
+    
+    <zh>
+        <alert_profile7><![CDATA[請輸入身高。]]></alert_profile7>
+	</zh>
+	<sc>
+        <alert_profile7><![CDATA[请输入身高。]]></alert_profile7>
+	</sc>
+	<en>
+        <alert_profile7><![CDATA[Please enter the height.]]></alert_profile7>
+	</en>
+    
+    <zh>
+        <alert_profile8><![CDATA[請輸入姓名及體重。]]></alert_profile8>
+	</zh>
+	<sc>
+        <alert_profile8><![CDATA[请输入姓名及体重。]]></alert_profile8>
+	</sc>
+	<en>
+        <alert_profile8><![CDATA[Please enter the name and weight.]]></alert_profile8>
+	</en>
+        
+    <zh>
+        <alert_profile9><![CDATA[請輸入姓名及身高。]]></alert_profile9>
+    </zh>
+    <sc>
+        <alert_profile9><![CDATA[请输入姓名及身高。]]></alert_profile9>
+    </sc>
+    <en>
+        <alert_profile9><![CDATA[Please enter the name and height.]]></alert_profile9>
+    </en>
+    
+    <zh>
+        <alert_profile10><![CDATA[請輸入體重及身高。]]></alert_profile10>
+	</zh>
+	<sc>
+        <alert_profile10><![CDATA[请输入体重及身高。]]></alert_profile10>
+	</sc>
+	<en>
+        <alert_profile10><![CDATA[Please enter the weight and height.]]></alert_profile10>
+	</en>
+
+    <zh>
+        <alert_profile12><![CDATA[請輸入姓名、體重及身高。]]></alert_profile12>
+	</zh>
+	<sc>
+        <alert_profile12><![CDATA[请输入姓名、体重及身高。]]></alert_profile12>
+	</sc>
+	<en>
+        <alert_profile12><![CDATA[Please enter the name, weight and height.]]></alert_profile12>
+	</en>
+    
+    <zh>
+        <alert_profile11><![CDATA[每日能量需要是基於你目前的體重計算，如你的身體質量指數屬於過輕或過重, 建議因應個人需要而作出適當調節。]]></alert_profile11>
+    </zh>
+    <sc>
+        <alert_profile11><![CDATA[每日能量需要是基于你目前的体重计算，如你的身体质量指数属于过轻或过重，建议因应个人需要而作出适当调节。]]></alert_profile11>
+    </sc>
+    <en>
+        <alert_profile11><![CDATA[Daily energy requirement calculated is based on your current body weight. If you are underweight or overweight, you are suggested to adjust the value based on your needs.]]></alert_profile11>
+    </en>
+    
+    <zh>
+        <no_record><![CDATA[沒有紀錄]]></no_record>
+    </zh>
+    <sc>
+        <no_record><![CDATA[没有纪录]]></no_record>
+    </sc>
+    <en>
+        <no_record><![CDATA[No record]]></no_record>
+    </en>
+    
+    <zh>
+        <alert_profile_saving_nergy><![CDATA[TEST]]></alert_profile_saving_nergy>
+    </zh>
+    <sc>
+        <alert_profile_saving_nergy><![CDATA[TEST]]></alert_profile_saving_nergy>
+    </sc>
+    <en>
+        <alert_profile_saving_nergy><![CDATA[TEST]]></alert_profile_saving_nergy>
+    </en>
+    
+    
+    
+    <zh>
+        <lbl_lowfat><![CDATA[低脂]]></lbl_lowfat>
+        <lbl_lowsalt><![CDATA[低鈉]]></lbl_lowsalt>
+        <lbl_lowsugar><![CDATA[低糖]]></lbl_lowsugar>
+        <lbl_3low><![CDATA[三低]]></lbl_3low>
+        <order_fat><![CDATA[最低脂含量排序]]></order_fat>
+        <order_salt><![CDATA[最低鈉含量排序]]></order_salt>
+        <order_sugar><![CDATA[最低糖含量排序]]></order_sugar>
+        <order_3low><![CDATA[顯示3低食物]]></order_3low>
+        <select_sorting><![CDATA[選擇排序]]></select_sorting>
+        
+        <cholesterol><![CDATA[膽固醇]]></cholesterol>
+        
+        <per100ml><![CDATA[每100毫升]]></per100ml>
+        <profile_pic><![CDATA[個人資料相片]]></profile_pic>
+        <alert_too_many_food><![CDATA[已超過30項記錄, 需要刪除舊有記錄?]]></alert_too_many_food>
+        <add_user><![CDATA[新增用戶]]></add_user>
+        <share_food><![CDATA[傳送食物]]></share_food>
+        <finish_food><![CDATA[傳送完成]]></finish_food>
+        <cal_bmi><![CDATA[計算BMI]]></cal_bmi>
+        <showallfood><![CDATA[顯示全部食物]]></showallfood>
+        
+        <bread><![CDATA[bread_zh.png]]></bread>
+        <chips><![CDATA[chips_zh.png]]></chips>
+        <milk><![CDATA[milk_zh.png]]></milk>
+        <oil><![CDATA[oil_zh.png]]></oil>
+        <salt><![CDATA[salt_zh.png]]></salt>
+        <sugar_pic><![CDATA[sugar_zh.png]]></sugar_pic>
+        
+        <transmitted_record><![CDATA[個紀錄]]></transmitted_record>
+        <transmitted_records><![CDATA[個紀錄]]></transmitted_records>
+    </zh>
+    
+    <sc>
+        <lbl_lowfat><![CDATA[低脂]]></lbl_lowfat>
+        <lbl_lowsalt><![CDATA[低钠]]></lbl_lowsalt>
+        <lbl_lowsugar><![CDATA[低糖]]></lbl_lowsugar>
+        <lbl_3low><![CDATA[三低]]></lbl_3low>
+        <order_fat><![CDATA[最低脂含量排序]]></order_fat>
+        <order_salt><![CDATA[最低钠含量排序]]></order_salt>
+        <order_sugar><![CDATA[最低糖含量排序]]></order_sugar>
+        <order_3low><![CDATA[显示3低食物]]></order_3low>
+        <select_sorting><![CDATA[选择排序]]></select_sorting>
+        
+        <cholesterol><![CDATA[胆固醇]]></cholesterol>
+        
+        <per100ml><![CDATA[每100毫升]]></per100ml>
+        <profile_pic><![CDATA[个人资料相片]]></profile_pic>
+        <alert_too_many_food><![CDATA[已超过30项记录, 需要删除旧有记录?]]></alert_too_many_food>
+        <add_user><![CDATA[新增用户]]></add_user>
+        <share_food><![CDATA[传送食物]]></share_food>
+        <finish_food><![CDATA[传送完成]]></finish_food>
+        <cal_bmi><![CDATA[计算BMI]]></cal_bmi>
+        <showallfood><![CDATA[显示全部食物]]></showallfood>
+        
+        <bread><![CDATA[bread_cn.png]]></bread>
+        <chips><![CDATA[chips_cn.png]]></chips>
+        <milk><![CDATA[milk_cn.png]]></milk>
+        <oil><![CDATA[oil_cn.png]]></oil>
+        <salt><![CDATA[salt_cn.png]]></salt>
+        <sugar_pic><![CDATA[sugar_cn.png]]></sugar_pic>
+        
+        <transmitted_record><![CDATA[个记录]]></transmitted_record>
+        <transmitted_records><![CDATA[个记录]]></transmitted_records>
+    </sc>
+    
+    <en>
+        <lbl_lowfat><![CDATA[Low Fat]]></lbl_lowfat>
+        <lbl_lowsalt><![CDATA[Low Sodium]]></lbl_lowsalt>
+        <lbl_lowsugar><![CDATA[Low Sugar]]></lbl_lowsugar>
+        <lbl_3low><![CDATA[3- Low]]></lbl_3low>
+        <order_fat><![CDATA[Sort by Lowest Fat Content]]></order_fat>
+        <order_salt><![CDATA[Sort by Lowest Sodium Content]]></order_salt>
+        <order_sugar><![CDATA[Sort by Lowest Sugar Content]]></order_sugar>
+        <order_3low><![CDATA[Show 3-Low Food]]></order_3low>
+        <select_sorting><![CDATA[Select sorting]]></select_sorting>
+        
+        <cholesterol><![CDATA[Cholesterol]]></cholesterol>
+        
+        <per100ml><![CDATA[per 100ml]]></per100ml>
+        <profile_pic><![CDATA[Profile Picture]]></profile_pic>
+        <alert_too_many_food><![CDATA[It exceed maximum 30 records! Would you like to delete the oldest record?]]></alert_too_many_food>
+        <add_user><![CDATA[Add User]]></add_user>
+        <share_food><![CDATA[Transmitting food data]]></share_food>
+        <finish_food><![CDATA[Transmitted]]></finish_food>
+        <cal_bmi><![CDATA[Calculate BMI]]></cal_bmi>
+        <showallfood><![CDATA[Show All Food]]></showallfood>
+        
+        <bread><![CDATA[bread_en.png]]></bread>
+        <chips><![CDATA[chips_en.png]]></chips>
+        <milk><![CDATA[milk_en.png]]></milk>
+        <oil><![CDATA[oil_en.png]]></oil>
+        <salt><![CDATA[salt_en.png]]></salt>
+        <sugar_pic><![CDATA[sugar_en.png]]></sugar_pic>
+        
+        <transmitted_record><![CDATA[ record]]></transmitted_record>
+        <transmitted_records><![CDATA[ records]]></transmitted_records>
+    </en>
+    
+    
+    
+</language>

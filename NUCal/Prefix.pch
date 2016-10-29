@@ -1,0 +1,37 @@
+//
+// Prefix header for all source files of the 'First' target in the 'First' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+#endif
+
+static BOOL IS_IPHONE5() {
+    int h = [[UIScreen mainScreen] bounds].size.height;
+    if (h == 568) return YES;
+    return NO;
+} // is_iphone5()
+
+static BOOL IS_IPHONE4() {
+    int h = [[UIScreen mainScreen] bounds].size.height;
+    if (h == 480) return YES;
+    return NO;
+} // is_iphone4()
+
+static int MY_DEVICE_HEIGHT() {
+    int h = [[UIScreen mainScreen] bounds].size.height;
+    return h;
+} // my_device_height
+
+static int MY_EXTRA_HEIGHT() {
+    int h = [[UIScreen mainScreen] bounds].size.height;
+    return (h-480);
+    // if it is iphone5, it returns 88
+    // if it is iphone3GS/4/4S, it returns 0
+}
+
+static int const OFFSET1 = 22;
+
+// if height == 568, it is iphone5
+// if height == 480, it is iphone4/3GS

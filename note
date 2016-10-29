@@ -1,0 +1,13 @@
+Header title: HelveticaNeue LT67 MdCn, 45pt
+Input field title, BMI result: HelveticaNeue LT57 Cn, 36pt
+Button: HelveticaNeue LT47 Cn, 33pt
+
+
+main title(營計寶):	華康新特圓體(长城特粗圆体), 56pt
+header title: 		華康新特圓體(长城特粗圆体), 45pt
+field title:  		華康粗圓體(華康圓體W5-GB5), 32pt
+button, unit(克):  	default, 26pt
+name(陳大文):		default, 36pt, bold
+food list item:		default, 32pt
+你的攝取量記錄:		default, 32pt, bold
+About text:		default, 32pt, bold (line spacing:48pt)
