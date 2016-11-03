@@ -296,14 +296,14 @@ extern NUCalViewController *mainController;
         UILabel *lbl_foodAmount = [[UILabel alloc]initWithFrame:CGRectMake(148, 118+ i * 30 + 3, 73, 24)];
         [lbl_foodAmount setText:[NSString stringWithFormat:@"%@%@/%@", [[foodInfo objectAtIndex:i] objectForKey:@"foodAmount"], [Language getText:@"g"], [Language getText:@"ml"]]];
         [lbl_foodAmount setFont:[UIFont systemFontOfSize:13]];
-        [lbl_foodAmount setTextAlignment:UITextAlignmentCenter];
+        [lbl_foodAmount setTextAlignment:NSTextAlignmentCenter];
         [lbl_foodAmount setBackgroundColor:[UIColor clearColor]];
         UILabel *lbl_weightType = [[UILabel alloc]initWithFrame:CGRectMake(229, 118+ i * 30 + 3, 91, 24)];
         NSString *tmpWeightType = [[foodInfo objectAtIndex:i] objectForKey:@"weightType"];
 //        tmpWeightType = [tmpWeightType stringByReplacingOccurrencesOfString:@"g/ml" withString:[NSString stringWithFormat:@"%@/%@", [Language getText:@"g"], [Language getText:@"ml"]]];
         [lbl_weightType setText:[NSString stringWithFormat:@"%@%@/%@", tmpWeightType, [Language getText:@"g"], [Language getText:@"ml"]]];
         [lbl_weightType setFont:[UIFont systemFontOfSize:13]];
-        [lbl_weightType setTextAlignment:UITextAlignmentCenter];
+        [lbl_weightType setTextAlignment:NSTextAlignmentCenter];
         [lbl_weightType setBackgroundColor:[UIColor clearColor]];
         
         [sv_result addSubview:lbl_foodName];

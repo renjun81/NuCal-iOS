@@ -18,7 +18,7 @@
         alertBGView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"popup_bg"]];
         
         BOOL haveCancel = YES;
-        int buttonNumber = 0;
+        NSInteger buttonNumber = 0;
         
         if(cancelTitle == nil){
             haveCancel = NO;
@@ -49,7 +49,7 @@
                 [lbl_subTitle setFont:[UIFont systemFontOfSize:18]];
                 [lbl_subTitle setMinimumFontSize:14];
                 [lbl_subTitle setText:subTitle];
-                [lbl_subTitle setTextAlignment:UITextAlignmentCenter];
+                [lbl_subTitle setTextAlignment:NSTextAlignmentCenter];
                 [alertContentView addSubview:lbl_subTitle];
                 if (haveCancel) {
                     UIButton *tmp = [[UIButton alloc]initWithFrame:CGRectMake(12, 120, 256, 43)];
@@ -79,7 +79,7 @@
                 [lbl_subTitle setFont:[UIFont systemFontOfSize:18]];
                 [lbl_subTitle setMinimumFontSize:14];
                 [lbl_subTitle setText:subTitle];
-                [lbl_subTitle setTextAlignment:UITextAlignmentCenter];
+                [lbl_subTitle setTextAlignment:NSTextAlignmentCenter];
                 [alertContentView addSubview:lbl_subTitle];
                 
                 if (haveCancel == NO) {
@@ -162,7 +162,7 @@
                 [lbl_subTitle setFont:[UIFont systemFontOfSize:18]];
                 [lbl_subTitle setMinimumFontSize:14];
                 [lbl_subTitle setText:subTitle];
-                [lbl_subTitle setTextAlignment:UITextAlignmentCenter];
+                [lbl_subTitle setTextAlignment:NSTextAlignmentCenter];
                 [alertContentView addSubview:lbl_subTitle];
                 
                 if(haveCancel){

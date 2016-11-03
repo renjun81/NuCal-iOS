@@ -192,10 +192,10 @@ extern NUCalViewController *mainController;
         a1.size.height += extra; // increase view size by 88
         self.view.frame = a1;
         // debug
-        int tag = self.view.tag;
+        NSInteger tag = self.view.tag;
         int h = self.view.frame.size.height;
         int y = self.view.frame.origin.y;
-        NSString *a = [[NSString alloc] initWithFormat:@"UIView tag%d, y=%d, h=%d", tag, y, h ];
+        NSString *a = [[NSString alloc] initWithFormat:@"UIView tag%ld, y=%d, h=%d", (long)tag, y, h ];
         NSLog(@"--- %@", a);
         [a release];
         
@@ -205,7 +205,7 @@ extern NUCalViewController *mainController;
         tag = tv_food.tag;
         h = tv_food.frame.size.height;
         y = tv_food.frame.origin.y;
-        NSString *b = [[NSString alloc] initWithFormat:@"TableView tag%d, y=%d, h=%d", tag, y, h ];
+        NSString *b = [[NSString alloc] initWithFormat:@"TableView tag%ld, y=%d, h=%d", (long)tag, y, h ];
         NSLog(@"--- %@", b);
         [b release];
         
@@ -376,7 +376,7 @@ extern NUCalViewController *mainController;
     
     for (int i = 0; [getList count] > i ; i++ )
     {
-        int foodID = [(NSNumber*)[getList objectAtIndex:i] integerValue];
+        NSInteger foodID = [(NSNumber*)[getList objectAtIndex:i] integerValue];
         for (int count = 0; [currentProfileFoodlist count] > count; count++) {
             if (foodID == [(Food*)[currentProfileFoodlist objectAtIndex:count] foodID] )
             {
@@ -400,7 +400,7 @@ extern NUCalViewController *mainController;
     
     for (int i = 0; [getList count] > i ; i++ )
     {
-        int foodID = [(NSNumber*)[getList objectAtIndex:i] integerValue];
+        NSInteger foodID = [(NSNumber*)[getList objectAtIndex:i] integerValue];
         for (int count = 0; [currentProfileFoodlist count] > count; count++) {
             if (foodID == [(Food*)[currentProfileFoodlist objectAtIndex:count] foodID] )
             {
@@ -473,15 +473,15 @@ extern NUCalViewController *mainController;
 //    NSSortDescriptor *descriptor = [[NSSortDescriptor alloc] initWithKey:@"foodName"  ascending:YES];
 //    [foodDictionary sortUsingDescriptors:[NSArray arrayWithObjects:descriptor,nil]];
     
-  	FoodListCell *cell = (FoodListCell*)[tableView dequeueReusableCellWithIdentifier:[NSString stringWithFormat:@"Cell %i",indexPath.section]];
+  	FoodListCell *cell = (FoodListCell*)[tableView dequeueReusableCellWithIdentifier:[NSString stringWithFormat:@"Cell %li",(long)indexPath.section]];
     
     UIView *cellBackView = [[[UIView alloc] initWithFrame:CGRectZero] autorelease];
     cellBackView.backgroundColor = [UIColor clearColor];
     
 	if (cell == nil) {
-        cell = [[[FoodListCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:[NSString stringWithFormat:@"Cell %i",indexPath.section] withController:self ]autorelease];
+        cell = [[[FoodListCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:[NSString stringWithFormat:@"Cell %li",(long)indexPath.section] withController:self ]autorelease];
     }
-    NSLog(@"intake count = %i", [tmpIntakeList count]);
+    NSLog(@"intake count = %lu", (unsigned long)[tmpIntakeList count]);
 
     [cell setBtnSelected:NO];
     if([tmpIntakeList count]!=0){
@@ -582,7 +582,7 @@ extern NUCalViewController *mainController;
 
 -(void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText{
     NSString *searchKey = [searchText stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-    NSLog(@"search text length = %i", [searchKey length]);
+    NSLog(@"search text length = %lu", (unsigned long)[searchKey length]);
     [foodDictionary removeAllObjects];
     if([searchKey length] != 0){
         for(int i = 0; i<[[Tool getProfileFoodList] count]; i++){
@@ -977,7 +977,7 @@ extern NUCalViewController *mainController;
             NSLog(@"Client");
         }
         
-        NSString *str=[NSString stringWithFormat:@"Connected from pier ",peerID];
+        NSString *str=[NSString stringWithFormat:@"Connected from peer: %@",peerID];
         NSLog(@"peer:%@",str);
         [mPeers addObject:peerID];
         
@@ -992,7 +992,7 @@ extern NUCalViewController *mainController;
         NSLog(@"disconnected");
         [mPeers removeObject:peerID];
         
-        NSString *str=[NSString stringWithFormat:@"DisConnected from pier ",peerID];
+        NSString *str=[NSString stringWithFormat:@"DisConnected from peer: %@",peerID];
         NSLog(@"%@",str);
     }
 }
@@ -1076,7 +1076,7 @@ extern NUCalViewController *mainController;
     
     countArray = [[NSMutableArray alloc] initWithArray:return_food];
     
-    NSLog(@"%i",[countArray count]);
+    NSLog(@"%lu",(unsigned long)[countArray count]);
     
     received = YES;   
     
@@ -1085,7 +1085,7 @@ extern NUCalViewController *mainController;
     [result release];
     [return_food release];
     
-    NSLog(@"saved food count: %i",[[Tool getProfileFoodList] count]);
+    NSLog(@"saved food count: %lu",(unsigned long)[[Tool getProfileFoodList] count]);
     [self storeProfile:mainController.currentProfile];
     [self initFoodDictionary];
     [self initIntakeList];
@@ -1115,7 +1115,7 @@ extern NUCalViewController *mainController;
         
         if ([countArray count] == 1)
         {
-        NuCalAlert *finishAlert = [[NuCalAlert alloc]initWithTitle:nil Subtitle:[NSString stringWithFormat:@"%@ (%i%@)",[Language getText:@"finish_food"],[countArray count],[Language getText:@"transmitted_record"]] CancelButtonTitle:[Language getText:@"yes"] ButtonTitle:nil];
+        NuCalAlert *finishAlert = [[NuCalAlert alloc]initWithTitle:nil Subtitle:[NSString stringWithFormat:@"%@ (%lu%@)",[Language getText:@"finish_food"],(unsigned long)[countArray count],[Language getText:@"transmitted_record"]] CancelButtonTitle:[Language getText:@"yes"] ButtonTitle:nil];
             
             [finishAlert setTag:777];
             [finishAlert setDelegate:self];
@@ -1124,7 +1124,7 @@ extern NUCalViewController *mainController;
         }
         else
         {
-        NuCalAlert *finishAlert = [[NuCalAlert alloc]initWithTitle:nil Subtitle:[NSString stringWithFormat:@"%@ (%i%@)",[Language getText:@"finish_food"],[countArray count],[Language getText:@"transmitted_records"]] CancelButtonTitle:[Language getText:@"yes"] ButtonTitle:nil];
+        NuCalAlert *finishAlert = [[NuCalAlert alloc]initWithTitle:nil Subtitle:[NSString stringWithFormat:@"%@ (%lu%@)",[Language getText:@"finish_food"],(unsigned long)[countArray count],[Language getText:@"transmitted_records"]] CancelButtonTitle:[Language getText:@"yes"] ButtonTitle:nil];
             
             [finishAlert setTag:777];
             [finishAlert setDelegate:self];

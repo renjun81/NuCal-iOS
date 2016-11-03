@@ -272,7 +272,7 @@ int loopCount;
     {
         view = @"UserProfile";
 //        view = @"ChooseUser";
-        index = [NSString stringWithFormat:@"%i", [Tool getDefaultProfile]];
+        index = [NSString stringWithFormat:@"%li", (long)[Tool getDefaultProfile]];
     }
     else if (button == b_setting)
     {
@@ -527,9 +527,9 @@ int loopCount;
         v.frame = tmp1;
         
         // debug
-        int tag = v.tag;
+        NSInteger tag = v.tag;
         int y = v.frame.origin.y;
-        NSString *a = [[NSString alloc] initWithFormat:@"UIButton tag%d, move %d from y=%d to %d", tag, idistance, y-idistance, y];
+        NSString *a = [[NSString alloc] initWithFormat:@"UIButton tag%ld, move %d from y=%d to %d", (long)tag, idistance, y-idistance, y];
         NSLog(@"--- %@", a);
         [a release];
     } // if extra end

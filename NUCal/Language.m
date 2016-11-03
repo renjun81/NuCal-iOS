@@ -60,7 +60,7 @@ static NSString *lang;
 	NSString *currentlang = [Language currentLanguage];
 //    NSLog(@"Current Language = %@", currentlang);
 	NSString *returnStr = @"";
-    int i = 0;
+
 	for (NSDictionary *dict in [Language getTextArray])
 	{
 //        NSLog(@"No.%i %@",i, dict);

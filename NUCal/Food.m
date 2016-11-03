@@ -28,7 +28,7 @@ extern NUCalViewController *mainController;
     [encoder encodeObject:[NSString stringWithFormat:@"%f", saturatedFat] forKey:@"saturatedFat"];
     [encoder encodeObject:[NSString stringWithFormat:@"%f", transFat] forKey:@"transFat"];
     [encoder encodeObject:[NSString stringWithFormat:@"%f", cholesterol] forKey:@"cholesterol"];
-    [encoder encodeObject:[NSString stringWithFormat:@"%d", carbohydratesType] forKey:@"carbohydratesType"];
+    [encoder encodeObject:[NSString stringWithFormat:@"%ld", (long)carbohydratesType] forKey:@"carbohydratesType"];
     [encoder encodeObject:[NSString stringWithFormat:@"%f", carbohydrates] forKey:@"carbohydrates"];
     [encoder encodeObject:[NSString stringWithFormat:@"%f", dietaryFibre] forKey:@"dietaryFibre"];
     [encoder encodeObject:[NSString stringWithFormat:@"%f", sugars] forKey:@"sugars"];
@@ -64,7 +64,7 @@ extern NUCalViewController *mainController;
 }
 
 
-- (id) initWithFood : (NSString*)_name Type:(int)_type UnitType:(int)_unitType Weight:(float)_weight Energy:(float)_energy EnergyType:(int)_energyType Protein:(float)_protein TotalFat:(float)_totalFat SaturatedFat:(float)_saturatedFat TransFat:(float)_transFat Cholesterol:(float)_cholesterol CarbohydratesType:(int)_carbohydratesType Carbohydrates:(float)_carbohydrates DietaryFibre:(float)_dietaryFibre Sugars:(float)_sugars Sodium:(float)_sodium ID:(int)_foodID
+- (id) initWithFood : (NSString*)_name Type:(int)_type UnitType:(int)_unitType Weight:(float)_weight Energy:(float)_energy EnergyType:(int)_energyType Protein:(float)_protein TotalFat:(float)_totalFat SaturatedFat:(float)_saturatedFat TransFat:(float)_transFat Cholesterol:(float)_cholesterol CarbohydratesType:(NSInteger)_carbohydratesType Carbohydrates:(float)_carbohydrates DietaryFibre:(float)_dietaryFibre Sugars:(float)_sugars Sodium:(float)_sodium ID:(int)_foodID
 {
     if ((self = [super init]))
     {

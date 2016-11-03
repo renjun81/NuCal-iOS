@@ -95,7 +95,7 @@ extern NUCalViewController *mainController;
     mainController.currentProfile = [profileArray objectAtIndex:[sender tag]];
     
     NSString *view = @"UserProfile";
-    NSString *profileIndex = [NSString stringWithFormat:@"%i", [sender tag]];
+    NSString *profileIndex = [NSString stringWithFormat:@"%li", (long)[sender tag]];
     NSDictionary* dictionary = [NSDictionary dictionaryWithObjectsAndKeys: view, @"view", profileIndex, @"index", nil];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"loadView" object:self userInfo:dictionary];
 }
@@ -136,10 +136,10 @@ extern NUCalViewController *mainController;
 
     NSInteger row = indexPath.row;
     
-    MultiUserCell *cell = (MultiUserCell*)[tableView dequeueReusableCellWithIdentifier:[NSString stringWithFormat:@"Cell %i",indexPath.section]];
+    MultiUserCell *cell = (MultiUserCell*)[tableView dequeueReusableCellWithIdentifier:[NSString stringWithFormat:@"Cell %li",(long)indexPath.section]];
     
     if (cell == nil) {
-        cell = [[[MultiUserCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:[NSString stringWithFormat:@"Cell %i",indexPath.section] profile:[profileArray objectAtIndex:row] row:(NSInteger)indexPath.row]autorelease];
+        cell = [[[MultiUserCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:[NSString stringWithFormat:@"Cell %li",(long)indexPath.section] profile:[profileArray objectAtIndex:row] row:(NSInteger)indexPath.row]autorelease];
     }
     [cell setTag:row];
     
@@ -171,9 +171,9 @@ extern NUCalViewController *mainController;
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
     if (editingStyle == UITableViewCellEditingStyleDelete) 
     {
-        int userIndex = indexPath.row;
+        NSInteger userIndex = indexPath.row;
         
-        NSLog(@"index:%i", userIndex);
+        NSLog(@"index:%li", (long)userIndex);
         
         if ([profileArray count] > 1)
         {
@@ -200,7 +200,7 @@ extern NUCalViewController *mainController;
 }
 
 
-- (int) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+- (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return [profileArray count];
 }
@@ -217,7 +217,7 @@ extern NUCalViewController *mainController;
     
     }
     
-    NSLog(@"selectIndex:%i",indexPath.row);
+    NSLog(@"selectIndex:%li",(long)indexPath.row);
     
     for (MultiUserCell *cell in cellArray)
     {

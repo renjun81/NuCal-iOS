@@ -1029,8 +1029,8 @@
 		EEA21DEB14208C4B009A9AB4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		EEA2DFC11414B9F100F387BE /* FoodListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodListCell.h; sourceTree = "<group>"; };
 		EEA2DFC21414B9F100F387BE /* FoodListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodListCell.m; sourceTree = "<group>"; };
-		EEAEE4931429EA9500FDBFBE /* DFT_R9.TTC */ = {isa = PBXFileReference; lastKnownFileType = file; path = DFT_R9.TTC; sourceTree = "<group>"; };
-		EEAEE498142A021C00FDBFBE /* DFGB_Y9.TTC */ = {isa = PBXFileReference; lastKnownFileType = file; path = DFGB_Y9.TTC; sourceTree = "<group>"; };
+		EEAEE4931429EA9500FDBFBE /* DFT_R9.TTC */ = {isa = PBXFileReference; lastKnownFileType = file; name = DFT_R9.TTC; path = Resources/DFT_R9.TTC; sourceTree = "<group>"; };
+		EEAEE498142A021C00FDBFBE /* DFGB_Y9.TTC */ = {isa = PBXFileReference; lastKnownFileType = file; name = DFGB_Y9.TTC; path = Resources/DFGB_Y9.TTC; sourceTree = "<group>"; };
 		EEDF42BE1499DDED00BEB2E0 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -1093,6 +1093,7 @@
 			children = (
 				B592E6A21404F16900651978 /* Tools */,
 				B592E6A41404F17B00651978 /* Views */,
+				B598712B140E1C9000D4BF3E /* Object */,
 				B592E6891404EF4300651978 /* NUCalAppDelegate.h */,
 				B592E68A1404EF4300651978 /* NUCalAppDelegate.m */,
 				B592E68C1404EF4300651978 /* MainWindow.xib */,
@@ -1196,7 +1197,6 @@
 				B5B139F114B3F095007944FF /* ProfileFoodList.m */,
 			);
 			name = Object;
-			path = NUCal;
 			sourceTree = "<group>";
 		};
 		B5B6B91414060054008426AA /* Resources */ = {
@@ -1204,7 +1204,6 @@
 			children = (
 				EEAEE498142A021C00FDBFBE /* DFGB_Y9.TTC */,
 				EEAEE4931429EA9500FDBFBE /* DFT_R9.TTC */,
-				B598712B140E1C9000D4BF3E /* Object */,
 				EE3A37A91406549100787EA1 /* Helvetica LT 47 Light Condensed.ttf */,
 				EE3A37AA1406549100787EA1 /* Helvetica LT 57 Condensed.ttf */,
 				EE3A37AB1406549100787EA1 /* Helvetica LT 67 Medium Condensed.ttf */,
@@ -1700,7 +1699,7 @@
 		B592E66D1404EF4200651978 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0800;
 				TargetAttributes = {
 					B592E6751404EF4300651978 = {
 						DevelopmentTeam = XTE7RSM9PD;
@@ -2265,18 +2264,34 @@
 		B592E6951404EF4300651978 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Yuk Yee Chung (92VSE379D3)";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				ONLY_ACTIVE_ARCH = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "68e00658-dbc8-479a-87f4-455ce4fc1846";
-				SDKROOT = iphoneos7.1;
+				SDKROOT = iphoneos;
 				VALID_ARCHS = "armv7 armv7s armv6";
 			};
 			name = Debug;
@@ -2284,16 +2299,31 @@
 		B592E6961404EF4300651978 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Food and Environmental Hygiene Department (XTE7RSM9PD)";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PROVISIONING_PROFILE = "ed45b057-cd94-45ba-88d8-c44894dfafb7";
-				SDKROOT = iphoneos7.1;
+				SDKROOT = iphoneos;
 				VALID_ARCHS = "armv7 armv7s armv6";
 			};
 			name = Release;
@@ -2311,12 +2341,13 @@
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "NUCal/NUCal-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fehd.NuCal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "68e00658-dbc8-479a-87f4-455ce4fc1846";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = NO;
-				VALID_ARCHS = "armv7 armv7s";
+				VALID_ARCHS = "$(ARCHS_STANDARD)";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -2333,12 +2364,13 @@
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "NUCal/NUCal-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fehd.NuCal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "ed45b057-cd94-45ba-88d8-c44894dfafb7";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = NO;
-				VALID_ARCHS = "armv7 armv7s";
+				VALID_ARCHS = "$(ARCHS_STANDARD)";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

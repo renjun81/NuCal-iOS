@@ -38,7 +38,7 @@ NUCalViewController *mainController;
 //    [self dumpFonts];
     [super viewDidLoad];
     mainController = self;
-    [self init];
+    [self onInit];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadViewHandler:) name:@"loadView" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateNavigationHandler:) name:@"updateNavigation" object:nil];
@@ -68,7 +68,7 @@ NUCalViewController *mainController;
     
 }
 
-- (void) init
+- (void) onInit
 {
     firstRun = YES;
     NSMutableArray *temp = [Tool getProfile];

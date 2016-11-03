@@ -70,10 +70,10 @@ extern NUCalViewController *mainController;
         a1.size.height += extra - 10; // increase view size by 88
         self.view.frame = a1;
         // debug
-        int tag = self.view.tag;
+        NSUInteger tag = self.view.tag;
         int h = self.view.frame.size.height;
         int y = self.view.frame.origin.y;
-        NSString *a = [[NSString alloc] initWithFormat:@"UIView tag%d, y=%d, h=%d", tag, y, h ];
+        NSString *a = [[NSString alloc] initWithFormat:@"UIView tag%lu, y=%d, h=%d", (unsigned long)tag, y, h ];
         NSLog(@"--- %@", a);
         [a release];
         
@@ -86,7 +86,7 @@ extern NUCalViewController *mainController;
         tag = tv_historyList.tag;
         h = tv_historyList.frame.size.height;
         y = tv_historyList.frame.origin.y;
-        NSString *b = [[NSString alloc] initWithFormat:@"TableView tag%d, y=%d, h=%d", tag, y, h ];
+        NSString *b = [[NSString alloc] initWithFormat:@"TableView tag%lu, y=%d, h=%d", (unsigned long)tag, y, h ];
         NSLog(@"--- %@", b);
         [b release];
         
@@ -228,7 +228,7 @@ extern NUCalViewController *mainController;
     if (editingStyle == UITableViewCellEditingStyleDelete) 
         {
         int intakeIndex;
-        NSString *intakeHistory = [NSString stringWithFormat:@"%i", [[mainController.currentProfile getIntakeHistoryList] count]- 1 - indexPath.row];
+        NSString *intakeHistory = [NSString stringWithFormat:@"%lu", [[mainController.currentProfile getIntakeHistoryList] count]- 1 - indexPath.row];
         intakeIndex = [intakeHistory intValue];
             
             if([[mainController.currentProfile getIntakeHistoryList] count] > 0){ 
@@ -263,7 +263,7 @@ extern NUCalViewController *mainController;
 
 -(IntakeHistoryCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-  	IntakeHistoryCell *cell = (IntakeHistoryCell*)[tableView dequeueReusableCellWithIdentifier:[NSString stringWithFormat:@"Cell %i",indexPath.section]];
+  	IntakeHistoryCell *cell = (IntakeHistoryCell*)[tableView dequeueReusableCellWithIdentifier:[NSString stringWithFormat:@"Cell %li",(long)indexPath.section]];
     
     UIView *cellBackView = [[[UIView alloc] initWithFrame:CGRectZero] autorelease];
     cellBackView.backgroundColor = [UIColor clearColor];
@@ -272,11 +272,11 @@ extern NUCalViewController *mainController;
 	if (cell == nil) {
         if ([[mainController.currentProfile getIntakeHistoryList] count] > 0)
         {
-            cell = [[[IntakeHistoryCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:[NSString stringWithFormat:@"Cell %i",indexPath.section] detailIcon:NO]autorelease];
+            cell = [[[IntakeHistoryCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:[NSString stringWithFormat:@"Cell %li",(long)indexPath.section] detailIcon:NO]autorelease];
         }
         else
         {
-            cell = [[[IntakeHistoryCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:[NSString stringWithFormat:@"Cell %i",indexPath.section] detailIcon:YES]autorelease];
+            cell = [[[IntakeHistoryCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:[NSString stringWithFormat:@"Cell %li",(long)indexPath.section] detailIcon:YES]autorelease];
         }
 
     }
@@ -300,11 +300,7 @@ extern NUCalViewController *mainController;
         
         
         NSLocale *locale;
-        if([[Language currentLanguage] isEqualToString: @"en"]){
-            locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US"];
-            [formatter setDateFormat:@"yyyy MMM dd 'at' hh:mm a"];
-        }
-        else if([[Language currentLanguage] isEqualToString: @"zh"]){
+        if([[Language currentLanguage] isEqualToString: @"zh"]){
             locale = [[NSLocale alloc] initWithLocaleIdentifier:@"zh-Hant"];
             [formatter setDateFormat:@"yyyy年MMMdd日 a hh:mm"];
         }
@@ -312,8 +308,12 @@ extern NUCalViewController *mainController;
             locale = [[NSLocale alloc] initWithLocaleIdentifier:@"zh-Hans"];
             [formatter setDateFormat:@"yyyy年MMMdd日 a hh:mm"];
         }
-        
-        
+        else //if([[Language currentLanguage] isEqualToString: @"en"])
+        {
+            locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US"];
+            [formatter setDateFormat:@"yyyy MMM dd 'at' hh:mm a"];
+        }
+    
         [formatter setLocale:locale];
         
         NSString *dateStr = [formatter stringFromDate:cellData];
@@ -356,7 +356,7 @@ extern NUCalViewController *mainController;
     {
         [tableView deselectRowAtIndexPath:indexPath animated:NO];
         NSString *view = @"MyIntakeHistoryDetail";
-        NSString *mode = [NSString stringWithFormat:@"%i", [[mainController.currentProfile getIntakeHistoryList] count]- 1 - indexPath.row];
+        NSString *mode = [NSString stringWithFormat:@"%lu", [[mainController.currentProfile getIntakeHistoryList] count]- 1 - indexPath.row];
         
         
         NSDictionary* dictionary = [NSDictionary dictionaryWithObjectsAndKeys: view, @"view",mode, @"mode", nil];

@@ -34,7 +34,7 @@
     float saturatedFat;
     float transFat;
     float cholesterol;
-    int carbohydratesType;
+    NSInteger carbohydratesType;
     float carbohydrates;
     float dietaryFibre;
     float sugars;
@@ -53,14 +53,14 @@
 @property (nonatomic) float saturatedFat;
 @property (nonatomic) float transFat;
 @property (nonatomic) float cholesterol;
-@property (nonatomic) int carbohydratesType;
+@property (nonatomic) NSInteger carbohydratesType;
 @property (nonatomic) float carbohydrates;
 @property (nonatomic) float dietaryFibre;
 @property (nonatomic) float sugars;
 @property (nonatomic) float sodium;
 @property (nonatomic) int foodID;
 
-- (id) initWithFood : (NSString*)_name Type:(int)_type UnitType:(int)_unitType Weight:(float)_weight Energy:(float)_energy EnergyType:(int)_energyType Protein:(float)_protein TotalFat:(float)_totalFat SaturatedFat:(float)_saturatedFat TransFat:(float)_transFat Cholesterol:(float)_cholesterol CarbohydratesType:(int)_carbohydratesType Carbohydrates:(float)_carbohydrates DietaryFibre:(float)_dietaryFibre Sugars:(float)_sugars Sodium:(float)_sodium ID:(int)_foodID;
+- (id) initWithFood : (NSString*)_name Type:(int)_type UnitType:(int)_unitType Weight:(float)_weight Energy:(float)_energy EnergyType:(int)_energyType Protein:(float)_protein TotalFat:(float)_totalFat SaturatedFat:(float)_saturatedFat TransFat:(float)_transFat Cholesterol:(float)_cholesterol CarbohydratesType:(NSInteger)_carbohydratesType Carbohydrates:(float)_carbohydrates DietaryFibre:(float)_dietaryFibre Sugars:(float)_sugars Sodium:(float)_sodium ID:(int)_foodID;
 - (id) initWithFoodCopy : (Food*)inFood;
 - (id) initWithFoodCopyTest : (Food*)inFood;
 

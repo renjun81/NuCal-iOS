@@ -32,7 +32,6 @@
 
 +(float)calProteinIntake:(Profile*)profile;
 
-+(float)calProteinIntake:(Profile*)profile;
 +(float)calTotalFatIntake:(Profile*)profile;
 +(float)calSatFatIntake:(Profile*)profile;
 +(float)calTranFatIntake:(Profile*)profile;

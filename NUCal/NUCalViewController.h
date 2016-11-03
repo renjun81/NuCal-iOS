@@ -49,7 +49,6 @@
 @property(nonatomic) BOOL firstRun, isHome, newUser;
 @property(nonatomic, retain) Profile *currentProfile;
 
-- (void) init;
 - (void) reloadCurrentProfile;
 
 - (void)loadViewHandler:(NSNotification *)notification;

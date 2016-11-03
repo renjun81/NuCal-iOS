@@ -114,7 +114,7 @@
     [self setProfile:inProfile atIndex:[self getDefaultProfile]];
 }
 
-+ (void) setProfile:(Profile *)inProfile atIndex:(int)index
++ (void) setProfile:(Profile *)inProfile atIndex:(NSInteger)index
 {
     NSMutableArray *storeArray = [[NSMutableArray alloc] initWithArray:[self getProfile]];
     Profile *currentProfile = [[Profile alloc] initWithProfile:inProfile];
@@ -146,7 +146,7 @@
 
 + (BOOL)setDefaultProfile:(NSInteger)inset
 {
-	NSString *outstring = [NSString stringWithFormat:@"%i", inset];
+	NSString *outstring = [NSString stringWithFormat:@"%li", (long)inset];
     NSError *error = NULL;
 	[outstring writeToFile:DEFAULTPROFILE atomically:YES encoding:NSUTF8StringEncoding error:&error];
     if (error == NULL)

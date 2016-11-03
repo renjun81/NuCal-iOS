@@ -115,7 +115,7 @@ extern NUCalViewController *mainController;
         [b_al_high setImage:[UIImage imageNamed:@"btn_pal_high_tc_on"] forState:UIControlStateSelected];
         [b_cal setImage:[UIImage imageNamed:@"btn_asian_tc"] forState:UIControlStateNormal];
         [b_nonAsian setImage:[UIImage imageNamed:@"btn_nonasian_tc"] forState:UIControlStateNormal];
-        CGPoint tmpCentre = b_cal.center;
+//        CGPoint tmpCentre = b_cal.center;
 //        [b_cal setFrame:CGRectMake(0, 0, 168, 35)];
 //        [b_cal setCenter:tmpCentre];
         
@@ -130,7 +130,7 @@ extern NUCalViewController *mainController;
         [b_al_high setImage:[UIImage imageNamed:@"btn_pal_high_tc_on"] forState:UIControlStateSelected];
         [b_cal setImage:[UIImage imageNamed:@"btn_asian_sc"] forState:UIControlStateNormal];
         [b_nonAsian setImage:[UIImage imageNamed:@"btn_nonasian_sc"] forState:UIControlStateNormal];
-        CGPoint tmpCentre = b_cal.center;
+//        CGPoint tmpCentre = b_cal.center;
 //        [b_cal setFrame:CGRectMake(0, 0, 168, 35)];
 //        [b_cal setCenter:tmpCentre];
         
@@ -332,7 +332,7 @@ extern NUCalViewController *mainController;
     {
         imagePicker.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
     }
-    [self presentModalViewController:imagePicker animated:NO];
+    [self presentViewController:imagePicker animated:NO completion:nil];
     
 //    NSString *view2 = [Language getText:@"user_profile"];
     NSString *view2 = [Language getText:@"profile_pic"];
@@ -372,7 +372,7 @@ extern NUCalViewController *mainController;
 	NSDictionary* dictionary2 = [NSDictionary dictionaryWithObjectsAndKeys: view2, @"title", buttonMode, @"buttonMode", isHidden, @"isHidden", nil];
 	[[NSNotificationCenter defaultCenter] postNotificationName:@"updateNavigation" object:self userInfo:dictionary2];
     
-    [picker dismissModalViewControllerAnimated:NO];
+    [picker dismissViewControllerAnimated:NO completion:nil];
     
     [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:NO];
     // original code - 31.5.2014
@@ -662,10 +662,10 @@ extern NUCalViewController *mainController;
     [self.view setFrame:CGRectMake(0,extra,320,568)];
     
     // debug
-    int tag = self.view.tag;
+    NSUInteger tag = self.view.tag;
     int h = self.view.frame.size.height;
     int y = self.view.frame.origin.y;
-    NSString *a = [[NSString alloc] initWithFormat:@"show_v_self tag%d, y=%d, h=%d, extra=%d", tag, y, h, extra];
+    NSString *a = [[NSString alloc] initWithFormat:@"show_v_self tag%lu, y=%d, h=%d, extra=%d", (unsigned long)tag, y, h, extra];
     NSLog(@"---%@", a);
     [a release];    
     
@@ -679,10 +679,10 @@ extern NUCalViewController *mainController;
     [v_holder setFrame:CGRectMake(0,extra,320,568)];
     
     // debug
-    int tag = v_holder.tag;
+    NSUInteger tag = v_holder.tag;
     int h = v_holder.frame.size.height;
     int y = v_holder.frame.origin.y;
-    NSString *a = [[NSString alloc] initWithFormat:@"show_v_holder tag%d, y=%d, h=%d, extra=%d", tag, y, h, extra];
+    NSString *a = [[NSString alloc] initWithFormat:@"show_v_holder tag%lu, y=%d, h=%d, extra=%d", (unsigned long)tag, y, h, extra];
     NSLog(@"---%@", a);
     [a release];
     
@@ -1340,7 +1340,7 @@ extern NUCalViewController *mainController;
 
 - (void) closeImagePicker
 {
-    [imagePicker dismissModalViewControllerAnimated:NO];
+    [imagePicker dismissViewControllerAnimated:NO completion:nil];
     [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:NO];
     [self.view setFrame:CGRectMake(0, 0, 320, 480)];
     

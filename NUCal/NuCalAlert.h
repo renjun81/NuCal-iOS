@@ -21,7 +21,7 @@
     UILabel *lbl_title, *lbl_subTitle;
     
     NSString *title;
-    NSString *subTitle;
+    //NSString *subTitle;
 }
 @property(nonatomic,assign) id delegate;
 

@@ -403,6 +403,8 @@
             }
         }
     }
+    
+    return 0;
 }
 
 +(float)calProteinIntake:(Profile*)profile{
@@ -480,9 +482,8 @@
             }
         }
     }
-    else
-        return false;
     
+    return false;
 }
 
 +(BOOL)calLowSugar:(Food *)food{

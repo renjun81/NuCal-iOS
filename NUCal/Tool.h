@@ -20,7 +20,7 @@
 + (NSMutableArray*)getProfile;
 + (void)setProfileList:(NSMutableArray*)plistDict;
 + (void)setProfile:(Profile*)inProfile;
-+ (void) setProfile:(Profile *)inProfile atIndex:(int)index;
++ (void) setProfile:(Profile *)inProfile atIndex:(NSInteger)index;
 //+ (void)addProfile:(NSMutableArray*)plistDict;
 + (NSMutableArray*)getProfileFoodList;
 + (void)setProfileFoodList:(NSMutableArray*)foodList;

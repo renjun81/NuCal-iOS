@@ -224,10 +224,10 @@ extern NUCalViewController *mainController;
         a1.size.height += extra; // increase view size by 88
         self.view.frame = a1;
         // debug
-        int tag = self.view.tag;
+        NSInteger tag = self.view.tag;
         int h = self.view.frame.size.height;
         int y = self.view.frame.origin.y;
-        NSString *a = [[NSString alloc] initWithFormat:@"UIView tag%d, y=%d, h=%d", tag, y, h ];
+        NSString *a = [[NSString alloc] initWithFormat:@"UIView tag%ld, y=%d, h=%d", (long)tag, y, h ];
         NSLog(@"--- %@", a);
         [a release];
         
@@ -237,7 +237,7 @@ extern NUCalViewController *mainController;
         tag = sv_result.tag;
         h = sv_result.frame.size.height;
         y = sv_result.frame.origin.y;
-        NSString *b = [[NSString alloc] initWithFormat:@"ScrollView tag%d, y=%d, h=%d", tag, y, h ];
+        NSString *b = [[NSString alloc] initWithFormat:@"ScrollView tag%ld, y=%d, h=%d", (long)tag, y, h ];
         NSLog(@"--- %@", b);
         [b release];
         
@@ -421,7 +421,7 @@ extern NUCalViewController *mainController;
                     tmpPackType = [tmpPackType stringByReplacingOccurrencesOfString:tmpReplace withString:@""];
                     [weightTypeArr addObject:tmpPackType];
                     [lbl_packType setTextColor:lbl_name.textColor];
-                    [lbl_packType setTextAlignment:UITextAlignmentCenter];
+                    [lbl_packType setTextAlignment:NSTextAlignmentCenter];
                     [lbl_packType setFont:[UIFont systemFontOfSize:13.0]];
                     [lbl_packType setBackgroundColor:[UIColor clearColor]];
                 }
@@ -554,7 +554,7 @@ extern NUCalViewController *mainController;
     NSString *temp = [string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     
     if([temp length] >0){
-        int dot = [textField.text rangeOfString:@"."].location;
+        NSInteger dot = [textField.text rangeOfString:@"."].location;
         
         if(dot != NSNotFound && dot > 0)
         {

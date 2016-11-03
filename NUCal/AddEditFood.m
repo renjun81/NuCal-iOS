@@ -384,7 +384,7 @@ bool cal_energy;
         carVal -= fibreVal;
     }
     else{
-        float tmp1 = [tf_carbohydrates.text floatValue];
+        //float tmp1 = [tf_carbohydrates.text floatValue];
         float tmp2 = [tf_fibre.text floatValue];
         float tmp3 = [tf_sugar.text floatValue];
         
@@ -563,10 +563,10 @@ bool cal_energy;
         a1.size.height += extra; // increase view size by 88
         self.view.frame = a1;
         // debug
-        int tag = self.view.tag;
+        NSInteger tag = self.view.tag;
         int h = self.view.frame.size.height;
         int y = self.view.frame.origin.y;
-        NSString *a = [[NSString alloc] initWithFormat:@"UIView tag%d, y=%d, h=%d", tag, y, h ];
+        NSString *a = [[NSString alloc] initWithFormat:@"UIView tag%ld, y=%d, h=%d", (long)tag, y, h ];
         NSLog(@"--- %@", a);
         [a release];
         
@@ -576,7 +576,7 @@ bool cal_energy;
         tag = sv_addfood.tag;
         h = sv_addfood.frame.size.height;
         y = sv_addfood.frame.origin.y;
-        NSString *b = [[NSString alloc] initWithFormat:@"ScrollView tag%d, y=%d, h=%d", tag, y, h ];
+        NSString *b = [[NSString alloc] initWithFormat:@"ScrollView tag%ld, y=%d, h=%d", (long)tag, y, h ];
         NSLog(@"--- %@", b);
         [b release];
         
@@ -1476,7 +1476,7 @@ bool cal_energy;
     float saturatedFat;
     float transFat;
     float cholesterol;
-    int _carbohydratesType;
+    NSInteger _carbohydratesType;
     float carbohydrates;
     float dietaryFibre;
     float sugars;
@@ -1488,7 +1488,7 @@ bool cal_energy;
         nuType = PER100GML;
     else if (btn_per100ml.selected)
         nuType = PER100ML;
-    else if (btn_package.selected)
+    else //if (btn_package.selected)
         nuType = PERSERVING;
     
     if(btn_g.selected){
@@ -1564,7 +1564,7 @@ bool cal_energy;
         sodium = [tf_sodium.text floatValue];
     }
     
-    NSLog(@"food list number : %i", [currentFoodList count]);
+    NSLog(@"food list number : %lu", (unsigned long)[currentFoodList count]);
     if([currentFoodList count] == 0){
         foodID = 1;
     }else{
@@ -1653,9 +1653,9 @@ bool cal_energy;
     if(textField != tf_food && [temp length] >0){
         
         
-        int dot = [textField.text rangeOfString:@"."].location;
+        NSUInteger dot = [textField.text rangeOfString:@"."].location;
         
-        if(dot != NSNotFound && dot >= 0)
+        if(dot != NSNotFound)
         {
             NSString *dp = [textField.text substringFromIndex:dot];
             if([dp length] > 2)
@@ -1694,7 +1694,7 @@ bool cal_energy;
     for(UIView* sub in [window subviews]){
         NSLog(@"%@", [sub class]);
         if ([sub class] == NSClassFromString(@"NuCalAlert")) {
-            nowAlert = sub;
+            nowAlert = (NuCalAlert*)sub;
             break;
         }
     }
@@ -1722,7 +1722,7 @@ bool cal_energy;
     for(UIView* sub in [window subviews]){
         NSLog(@"%@", [sub class]);
         if ([sub class] == NSClassFromString(@"NuCalAlert")) {
-            nowAlert = sub;
+            nowAlert = (NuCalAlert*)sub;
             break;
         }
     }
@@ -1777,7 +1777,7 @@ bool cal_energy;
     for(UIView* sub in [window subviews]){
         NSLog(@"%@", [sub class]);
         if ([sub class] == NSClassFromString(@"NuCalAlert")) {
-            nowAlert = sub;
+            nowAlert = (NuCalAlert*)sub;
             break;
         }
     }
@@ -1954,7 +1954,7 @@ bool cal_energy;
     for(UIView* sub in [window subviews]){
         NSLog(@"%@", [sub class]);
         if ([sub class] == NSClassFromString(@"NuCalAlert")) {
-            nowAlert = sub;
+            nowAlert = (NuCalAlert*)sub;
             break;
         }
     }
@@ -1971,7 +1971,7 @@ bool cal_energy;
     for(UIView* sub in [window subviews]){
         NSLog(@"%@", [sub class]);
         if ([sub class] == NSClassFromString(@"NuCalAlert")) {
-            nowAlert = sub;
+            nowAlert = (NuCalAlert*)sub;
             break;
         }
     }

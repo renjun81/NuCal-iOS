@@ -39,7 +39,7 @@
     return self;
 }
 
-- (void)setID:(int)ID{
+- (void)setID:(NSInteger)ID{
     cellID = ID;
 }
 

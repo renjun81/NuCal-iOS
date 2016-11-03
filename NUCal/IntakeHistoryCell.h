@@ -10,7 +10,7 @@
 
 
 @interface IntakeHistoryCell : UITableViewCell {
-    int cellID;
+    NSInteger cellID;
     BOOL isOver;
     UILabel *lbl_date;
     UIImageView *healthIcon;
@@ -20,7 +20,7 @@
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier detailIcon:(BOOL)detailIconHidden;
 
-- (void)setID:(int)ID;
+- (void)setID:(NSInteger)ID;
 
 - (void)setOver:(BOOL)over;
 
