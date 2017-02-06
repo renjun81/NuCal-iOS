@@ -41,12 +41,12 @@
 
 - (void)setMode:(int)mode;
 - (IBAction) buttonPressed:(id)button;
-- (void)updateCounter:(NSTimer *)theTimer;
-- (void) loopCounter:(NSTimer *)timer;
-- (void)addfoodAnimation;
-- (void)foodlistAnimation;
-- (void)historyAnimation;
-- (void)intakeAnimation;
+//- (void)updateCounter:(NSTimer *)theTimer;
+//- (void) loopCounter:(NSTimer *)timer;
+//- (void)addfoodAnimation;
+//- (void)foodlistAnimation;
+//- (void)historyAnimation;
+//- (void)intakeAnimation;
 - (void) bannerControl;
 //- (void)stopAnimation;
 @end

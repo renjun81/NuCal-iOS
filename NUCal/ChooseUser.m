@@ -226,7 +226,7 @@ extern NUCalViewController *mainController;
     [[(MultiUserCell*)[cellArray objectAtIndex:indexPath.row] b_select] setSelected:YES];
 }
 
-- (float) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+- (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 44;
 }

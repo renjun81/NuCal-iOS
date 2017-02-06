@@ -47,7 +47,7 @@
                 [lbl_subTitle setBackgroundColor:[UIColor clearColor]];
                 [lbl_subTitle setNumberOfLines:5];
                 [lbl_subTitle setFont:[UIFont systemFontOfSize:18]];
-                [lbl_subTitle setMinimumFontSize:14];
+                [lbl_subTitle setMinimumScaleFactor:14/[UIFont labelFontSize]];
                 [lbl_subTitle setText:subTitle];
                 [lbl_subTitle setTextAlignment:NSTextAlignmentCenter];
                 [alertContentView addSubview:lbl_subTitle];
@@ -77,7 +77,7 @@
                 [lbl_subTitle setBackgroundColor:[UIColor clearColor]];
                 [lbl_subTitle setNumberOfLines:5];
                 [lbl_subTitle setFont:[UIFont systemFontOfSize:18]];
-                [lbl_subTitle setMinimumFontSize:14];
+                [lbl_subTitle setMinimumScaleFactor:14/[UIFont labelFontSize]];
                 [lbl_subTitle setText:subTitle];
                 [lbl_subTitle setTextAlignment:NSTextAlignmentCenter];
                 [alertContentView addSubview:lbl_subTitle];
@@ -160,7 +160,7 @@
                 [lbl_subTitle setBackgroundColor:[UIColor clearColor]];
                 [lbl_subTitle setNumberOfLines:5];
                 [lbl_subTitle setFont:[UIFont systemFontOfSize:18]];
-                [lbl_subTitle setMinimumFontSize:14];
+                [lbl_subTitle setMinimumScaleFactor:14/[UIFont labelFontSize]];
                 [lbl_subTitle setText:subTitle];
                 [lbl_subTitle setTextAlignment:NSTextAlignmentCenter];
                 [alertContentView addSubview:lbl_subTitle];

@@ -10,6 +10,7 @@
 #import "NUCalViewController.h"
 
 @implementation FoodList
+@synthesize loadingView;
 @synthesize sb_food;
 @synthesize btn_myIntake;
 @synthesize tv_food;

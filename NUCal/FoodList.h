@@ -53,7 +53,6 @@
     UIImageView *v_lowthree;
     
     GKPeerPickerController *mPicker;
-	GKSession *mSession;
     NSMutableArray *mPeers;
     
     NSTimer *blueToothTimer;
@@ -75,11 +74,10 @@
 - (void) initFoodDictionary;
 - (void) initIntakeList;
 - (void) addIntake:(int)intakeNum;
+- (void) removeIntake:(int)intakeNum;
 - (NSMutableArray*) getIntakeFoodList:(NSMutableArray*) getList;
 - (NSMutableArray*)getIntakeFoodListBlueTooth:(NSMutableArray*) getList;
 - (NSMutableArray*) filterFoodExcept:(NSString*) key forFoodlist:(NSMutableArray*) inFoodList;
-//- (NSString*) getPeerName:(NSString*) test;
-- (void) removeIntake:(int)intakeNum;
 - (void) pickerViewOpen;
 - (void) pickerViewClose;
 - (void) disableBlueTooth;

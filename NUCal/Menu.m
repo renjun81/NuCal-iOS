@@ -322,7 +322,8 @@ int loopCount;
             [Language saveCurrentLanguage:@"sc"];
         }
     }
-    else if(alertView.tag == 2){
+    else //if(alertView.tag == 2)
+    {
        
         if(buttonIndex == 0)
         {

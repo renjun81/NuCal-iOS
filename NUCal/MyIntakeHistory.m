@@ -10,6 +10,7 @@
 #import "NUCalViewController.h"
 
 @implementation MyIntakeHistory
+@synthesize user_icon;
 @synthesize lbl_name;
 @synthesize tv_historyList;
 
@@ -227,9 +228,10 @@ extern NUCalViewController *mainController;
     
     if (editingStyle == UITableViewCellEditingStyleDelete) 
         {
-        int intakeIndex;
-        NSString *intakeHistory = [NSString stringWithFormat:@"%lu", [[mainController.currentProfile getIntakeHistoryList] count]- 1 - indexPath.row];
-        intakeIndex = [intakeHistory intValue];
+        int intakeIndex = [[mainController.currentProfile getIntakeHistoryList] count]- 1 - indexPath.row;
+        //NSString *intakeHistory = [NSString stringWithFormat:@"%lu", [[mainController.currentProfile getIntakeHistoryList] count]- 1 - indexPath.row];
+        //intakeIndex = [intakeHistory intValue];
+            
             
             if([[mainController.currentProfile getIntakeHistoryList] count] > 0){ 
             [[mainController.currentProfile getIntakeHistoryList] removeObjectAtIndex:intakeIndex];
@@ -356,8 +358,8 @@ extern NUCalViewController *mainController;
     {
         [tableView deselectRowAtIndexPath:indexPath animated:NO];
         NSString *view = @"MyIntakeHistoryDetail";
-        NSString *mode = [NSString stringWithFormat:@"%lu", [[mainController.currentProfile getIntakeHistoryList] count]- 1 - indexPath.row];
-        
+        NSInteger idx = [[mainController.currentProfile getIntakeHistoryList] count]- 1 - indexPath.row;
+        NSString *mode = [NSString stringWithFormat:@"%u", idx];
         
         NSDictionary* dictionary = [NSDictionary dictionaryWithObjectsAndKeys: view, @"view",mode, @"mode", nil];
         [[NSNotificationCenter defaultCenter] postNotificationName:@"loadView" object:self userInfo:dictionary];

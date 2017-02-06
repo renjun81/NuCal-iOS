@@ -481,7 +481,8 @@ extern NUCalViewController *mainController;
         locale = [[NSLocale alloc] initWithLocaleIdentifier:@"zh-Hant"];
         [formatter setDateFormat:@"yyyy年MMMdd日 a hh:mm"];
     }
-    else if([[Language currentLanguage] isEqualToString: @"sc"]){
+    else //if([[Language currentLanguage] isEqualToString: @"sc"])
+    {
         locale = [[NSLocale alloc] initWithLocaleIdentifier:@"zh-Hans"];
         [formatter setDateFormat:@"yyyy年MMMdd日 a hh:mm"];
     }

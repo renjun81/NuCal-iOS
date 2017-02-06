@@ -359,7 +359,8 @@ bool cal_energy;
         [tf_nutrition setBackground:[UIImage imageNamed:@"txtfield_food_dim"]];
 
     }
-    else if(btn_package.selected){
+    else //if(btn_package.selected)
+    {
         
 //        [lbl_nutrition setHidden:YES];
 //        [btn_g setHidden:NO];
@@ -1152,8 +1153,9 @@ bool cal_energy;
     for(UIView* sub in [window subviews]){
         NSLog(@"%@", [sub class]);
         if ([sub class] == NSClassFromString(@"NuCalAlert")) {
-            [sub setAlpha:0];
-            [sub dismiss];
+            NuCalAlert *alert = (NuCalAlert*)sub;
+            [alert setAlpha:0];
+            [alert dismiss];
             break;
         }
     }

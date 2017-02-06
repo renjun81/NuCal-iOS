@@ -1702,7 +1702,8 @@
 				LastUpgradeCheck = 0800;
 				TargetAttributes = {
 					B592E6751404EF4300651978 = {
-						DevelopmentTeam = XTE7RSM9PD;
+						DevelopmentTeam = 62C79FQ999;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -2335,6 +2336,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 62C79FQ999;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = NUCal/Prefix.pch;
@@ -2342,9 +2344,9 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "NUCal/NUCal-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.fehd.NuCal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fehd.NuCal.oo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "68e00658-dbc8-479a-87f4-455ce4fc1846";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = NO;
 				VALID_ARCHS = "$(ARCHS_STANDARD)";
@@ -2359,15 +2361,16 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = 62C79FQ999;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = NUCal/Prefix.pch;
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "NUCal/NUCal-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.fehd.NuCal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fehd.NuCal.oo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "ed45b057-cd94-45ba-88d8-c44894dfafb7";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = NO;
 				VALID_ARCHS = "$(ARCHS_STANDARD)";

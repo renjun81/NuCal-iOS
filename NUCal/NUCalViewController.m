@@ -7,6 +7,9 @@
 //
 
 #import "NUCalViewController.h"
+#import "AddEditFood.h"
+#import "MyIntakeHistoryDetail.h"
+
 NUCalViewController *mainController;
 
 @implementation NUCalViewController
@@ -111,8 +114,8 @@ NUCalViewController *mainController;
     [profileArray release];
 }
 
-//- (void) testWriteProfile
-//{
+- (void) testWriteProfile
+{
 //    Profile *user1 = [[Profile alloc] initWithData:@"peter" Gender:MALE Weight:54.5 WeightType:KG Height:1.7 HeightType:METER Age:20 ActivityLv:AL_HIGH];
 //    NSLog(@"%@", user1.userName);
 //    
@@ -129,8 +132,7 @@ NUCalViewController *mainController;
 //    
 //    [food1 release];
 //    [user1 release];
-//
-//}
+}
 
 - (void) testReadProfile
 {
@@ -184,24 +186,32 @@ NUCalViewController *mainController;
     
 	// Init class from string
 	currentViewController = [[NSClassFromString(view) alloc] initWithNibName:view bundle:nil];
-	[currentViewController setMode:[mode intValue]];
+    if ( [view isEqualToString:@"AddEditFood"]) {
+        AddEditFood *vc = (AddEditFood*)currentViewController;
+        [vc setMode:[mode intValue]];
+    }
+    else if ( [view isEqualToString:@"MyIntakeHistoryDetail"]) {
+        MyIntakeHistoryDetail *vc = (MyIntakeHistoryDetail*)currentViewController;
+        [vc setMode:[mode intValue]];
+    }
     
     if ([view isEqualToString:@"UserProfile"])
     {
+        UserProfile *userProfileVC = (UserProfile*)currentViewController;
         if (newUser)
         {
             if ([[Tool getProfile] count] != 0)
             {
-                [currentViewController setIndex: [[Tool getProfile] count]];
+                [userProfileVC setIndex: [[Tool getProfile] count]];
             }
             else
             {
-                 [currentViewController setIndex: [index integerValue]];
+                 [userProfileVC setIndex: [index integerValue]];
             }
         }
         else
         {
-            [currentViewController setIndex: [index integerValue]];
+            [userProfileVC setIndex: [index integerValue]];
         }
         
     }
@@ -371,8 +381,9 @@ NUCalViewController *mainController;
     for(UIView* sub in [window subviews]){
         NSLog(@"%@", [sub class]);
         if ([sub class] == NSClassFromString(@"NuCalAlert")) {
-            [sub setAlpha:0];
-            [sub dismiss];
+            NuCalAlert *alertView = (NuCalAlert*)sub;
+            [alertView setAlpha:0];
+            [alertView dismiss];
             break;
         }
     }

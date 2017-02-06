@@ -405,7 +405,8 @@ extern NUCalViewController *mainController;
             UILabel *lbl_packType = [[UILabel alloc]initWithFrame:CGRectMake(245, 44 + i * 30 +3 , 70, 24)];
             for(int j = 0; j < [[Tool getProfileFoodList]count]; j++){
                 if([[[Tool getProfileFoodList] objectAtIndex:j] foodID] == [[sortedIntakeList objectAtIndex:i] intValue]){
-                    if([[[Tool getProfileFoodList] objectAtIndex:j] type] == PER100GML){
+                    Food *food = [[Tool getProfileFoodList] objectAtIndex:j];
+                    if([food type] == PER100GML){
                         [lbl_packType setText:[NSString stringWithFormat:@"100%@/%@", [Language getText:@"g"], [Language getText:@"ml"]]];
                     }else{
                         if([[[Tool getProfileFoodList] objectAtIndex:j] weight] == (int)[[[Tool getProfileFoodList] objectAtIndex:j] weight]){

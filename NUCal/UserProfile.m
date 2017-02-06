@@ -1146,7 +1146,8 @@ extern NUCalViewController *mainController;
     if (asian == ASIAN){
         BMIdegree = 10.0 + (BMIVal - 22.0) * (110.0 / 13.0) ;
     }
-    else if (asian == NONASIAN){
+    else //f (asian == NONASIAN)
+    {
         BMIdegree = 10.0 + (BMIVal - 22.0) * (110.0 / 13.0) ;
     }
     

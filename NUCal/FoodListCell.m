@@ -7,7 +7,7 @@
 //
 
 #import "FoodListCell.h"
-//#import "FoodList.h"
+#import "FoodList.h"
 
 @implementation FoodListCell
 
